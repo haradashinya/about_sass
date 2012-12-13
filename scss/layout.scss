@@ -1,0 +1,70 @@
+$default-size: 30;
+$screen-height: 800;
+$default-margin-left: 50;
+@mixin radius {
+  corner-radius: 10px;
+}
+@mixin code($color) {
+  border-radius:10;
+  background-color: $color;
+  padding: 10 15 10 10;
+  font-size: $default-size+3;
+  @include radius;
+
+}
+
+
+body {
+  background: black;
+  padding:0px;
+  color:white;
+  font-size:$default-size;
+  font-family:sans-serif;
+  margin-left: $default-margin-left;
+}
+.page {
+  height: $screen-height;
+}
+
+.sass {
+  @include code(green);
+}
+
+h3 {
+}
+h1 {
+  background-color: #ff6c02;
+  border-radius:10;
+  padding-left: 10;
+}
+
+
+
+
+.page {
+  $title-font: 50;
+  .title {
+    margin-top: 400px;
+    background-color:black;
+    text-align:center;
+    font-size: $title-font;
+    font-weight: bold;
+  }
+  .detail {
+    text-align:center;
+    font-size: $title-font * 0.7;
+  }
+
+
+}
+
+
+
+a {
+  color:white;
+  font-size: $default-size;
+}
+.introduce {
+  background: yellow;
+}
+
