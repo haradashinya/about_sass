@@ -7,7 +7,7 @@ body {
   margin-left: 50; }
 
 .page {
-  height: 800; }
+  height: 1000; }
 
 .sass {
   border-radius: 10;
@@ -22,7 +22,7 @@ h1 {
   padding-left: 10; }
 
 .page .title {
-  margin-top: 400px;
+  margin-top: 400;
   background-color: black;
   text-align: center;
   font-size: 50;
@@ -30,6 +30,8 @@ h1 {
 .page .detail {
   text-align: center;
   font-size: 35; }
+.page .finish {
+  font-weight: bold; }
 
 a {
   color: white;

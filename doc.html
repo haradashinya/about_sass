@@ -5,30 +5,30 @@
 </head>
 
 <div class="page">
-        <h1 class="title">sassをつかってみた</h1>
+        <h1 class="title">sassの簡単な紹介</h1>
         <div class="detail">Twitter: @outsider_0219</div>
 </div>
 
 
 <div class="page">
     <h1>自己紹介</h1>
-        <pre>
-        プログラミングを勉強中です。。。
-        微妙なIphoneアプリを作ったりしています。。。
-        </pre>
+<pre>
+プログラミングを勉強中です。。。
+微妙なIphoneアプリを作ったりしています。。。
+</pre>
 
 </div>
 
 
 <div class="page">
     <h1>sassとは</h1>
-    <pre>
-        sassはcssを拡張した言語。コンパイルすると、cssが作られます！
-        これを使うとデザインが楽しくなる！
-        しかも,cssの上位互換性があるので、cssの文法は全部今までのように使える。
+<pre>
+sassはcssを拡張した言語。コンパイルすると、cssが作られます！
+これを使うとデザインが楽しくなる！
+しかも,cssの上位互換性があるので、cssの文法は全部今までのように使える。
 
-        <a href="http://sass-lang.com/tutorial.html">公式サイト</a>
-    </pre>
+<a href="http://sass-lang.com/tutorial.html">公式サイト</a>
+</pre>
 
 </div>
 
@@ -78,9 +78,32 @@ hoge.scss -> hoge.css
     <h4>使い方</h4>
     <div class="sass">
         .some_class { <br/>
-        @include radius; <br/>
+        @include code(green); <br/>
         }<br/>
     </div>
+
+</div>
+
+<div class="page">
+    <h1 class="sub">sassひとめぐり --@each,@if</h1>
+    <div class="sass">
+    <pre>
+$prefixes: -webkit-,-moz-,-ms-,-o-;
+@each $prefix in $prefixes{
+    @if $prefix == -ms- {
+        #{$prefix}border-radius: 20;
+    }@else{
+        #{$prefix}border-radius: 10;
+    }
+}
+</pre> </div>
+</div>
+
+
+
+<div class="page">
+    <h1 class="sub">おわり</h1>
+    <div class="finish">詳しくは<a href="http://sass-lang.com/tutorial.html">公式サイトへ!</a></div>
 
 </div>
 

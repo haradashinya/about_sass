@@ -1,5 +1,5 @@
 $default-size: 30;
-$screen-height: 800;
+$screen-height: 1000;
 $default-margin-left: 50;
 @mixin radius {
   corner-radius: 10px;
@@ -30,8 +30,6 @@ body {
   @include code(green);
 }
 
-h3 {
-}
 h1 {
   background-color: #ff6c02;
   border-radius:10;
@@ -44,7 +42,7 @@ h1 {
 .page {
   $title-font: 50;
   .title {
-    margin-top: 400px;
+    margin-top: $screen-height * 0.4;
     background-color:black;
     text-align:center;
     font-size: $title-font;
@@ -55,6 +53,9 @@ h1 {
     font-size: $title-font * 0.7;
   }
 
+  .finish {
+    font-weight: bold;
+  }
 
 }
 
