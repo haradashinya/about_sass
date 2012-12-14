@@ -20,7 +20,10 @@ var iti;
 var counter = 0;
 
 var arrDat;
-// 一秒間に５０フレーム
+
+var h;
+var s;
+// frame per 60;
 window.requestAnimationFrame = (function(){
   return function(callback,element){
     setTimeout(callback,1000/60);
@@ -119,17 +122,26 @@ function renderText(text){
 
 function render() {
 
+
+  if(!window.cnt) window.cnt = 0;
+
+  window.cnt++;
+  if(window.cnt % 10 === 0){
+    h = Math.floor(Math.random() * 255) > 80 ? 130 : 120;
+    s = Math.floor(Math.random() *255) > 125 ? 100: 50;
+  }
+
+  console.log(window.cnt);
+
   msg = currentDate();
   ctx.fillStyle = 'rgb(0,0,0)';
   ctx.fillRect(0, 0, cW, cH);
   var i;
   var j;
   var iti2=-iti;
-  var red = Math.floor(Math.random()*255) > 125 ? 255 : 0;
-  var green = Math.floor(Math.random()*255) > 125 ? 255 : 0;
-  var yellow = Math.floor(Math.random() *255) > 125 ? 255 : 0 ;
-  ctx.fill
-  ctx.fillStyle = 'rgb(' + red + ',' + green + ',' + yellow +')';
+
+  ctx.fillStyle =  'hsl(' + h + ',' + s +'%' + ',50%)';
+
 //  ctx.fillStyle = 'rgb(0,255,0)';
   for(i=0;i<xsuu;i++) {
     for(j=0;j<colorNum;j++) {
@@ -145,12 +157,15 @@ function render() {
     if(iti2>arrDat.length-1) iti2=0;
   }
   iti--;
-  if(iti<= -arrDat.length){
-    counter += 1;
+  counter += 1;
 
-    if (counter % 1== 0){
+  if (counter % 1== 0){
+    console.log("hello");
+
 //          changeText(counter);
-    }
+  }
+  if(iti<= -arrDat.length){
+
     // タイムラインに一回文字が流れたら、メッセージの内容を変更する。
 
     iti=0
