@@ -37,12 +37,19 @@ h1 {
 }
 
 
+#cvMessageBoard {
+  margin-left:-100;
+  padding:0;
+}
+#cvTextPut{
+  margin:-100;
+}
 
 
 .page {
   $title-font: 50;
   .title {
-    margin-top: $screen-height * 0.4;
+    margin-top: 200;
     background-color:black;
     text-align:center;
     font-size: $title-font;
