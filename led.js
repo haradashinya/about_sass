@@ -125,8 +125,11 @@ function render() {
   var i;
   var j;
   var iti2=-iti;
-  var green = Math.floor(Math.random()* 150) + 100;
-  ctx.fillStyle = 'rgb(0,' + green + ',0)';
+  var red = Math.floor(Math.random()*255) > 125 ? 255 : 0;
+  var green = Math.floor(Math.random()*255) > 125 ? 255 : 0;
+  var yellow = Math.floor(Math.random() *255) > 125 ? 255 : 0 ;
+  ctx.fill
+  ctx.fillStyle = 'rgb(' + red + ',' + green + ',' + yellow +')';
 //  ctx.fillStyle = 'rgb(0,255,0)';
   for(i=0;i<xsuu;i++) {
     for(j=0;j<colorNum;j++) {
