@@ -13,6 +13,7 @@
     <file path="$PROJECT_DIR$/css/layout.css" changelist="e65d09ad-df41-460c-b0d1-6649e5fad353" time="1355479045915" ignored="false" />
     <file path="$USER_HOME$/backup/outsider_orig/scss/led.scss" changelist="e65d09ad-df41-460c-b0d1-6649e5fad353" time="1355478736758" ignored="false" />
     <file path="/led.scss" changelist="e65d09ad-df41-460c-b0d1-6649e5fad353" time="1355478722578" ignored="false" />
+    <file path="/led.js" changelist="e65d09ad-df41-460c-b0d1-6649e5fad353" time="1355483064498" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,25 +85,25 @@
       <file leaf-file-name="doc.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doc.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="17" selection-start="351" selection-end="351" vertical-scroll-proportion="-10.88">
+            <state line="17" column="17" selection-start="351" selection-end="351" vertical-scroll-proportion="-0.64">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="layout.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/layout.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="607" selection-end="607" vertical-scroll-proportion="0.2849315">
+            <state line="16" column="5" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="led.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="led.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/led.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="53" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
+            <state line="127" column="49" selection-start="2813" selection-end="2813" vertical-scroll-proportion="0.62482566">
               <folding />
             </state>
           </provider>
@@ -123,8 +124,8 @@
         <option value="$PROJECT_DIR$/doc.txt" />
         <option value="$PROJECT_DIR$/md.py" />
         <option value="$PROJECT_DIR$/doc.html" />
-        <option value="$PROJECT_DIR$/led.js" />
         <option value="$PROJECT_DIR$/scss/layout.scss" />
+        <option value="$PROJECT_DIR$/led.js" />
       </list>
     </option>
   </component>
@@ -161,7 +162,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -197,6 +197,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -212,8 +213,8 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -247,6 +248,14 @@
       <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -262,12 +271,17 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -296,19 +310,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -485,6 +486,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/doc.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="17" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/layout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/led.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="53" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/md.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="91" column="26" selection-start="1718" selection-end="1718" vertical-scroll-proportion="0.0">
           <folding />
         </state>
@@ -509,23 +538,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/led.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="53" selection-start="615" selection-end="615" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doc.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="17" selection-start="351" selection-end="351" vertical-scroll-proportion="-10.88">
+        <state line="17" column="17" selection-start="351" selection-end="351" vertical-scroll-proportion="-0.64">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/layout.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="607" selection-end="607" vertical-scroll-proportion="0.2849315">
+        <state line="16" column="5" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/led.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="49" selection-start="2813" selection-end="2813" vertical-scroll-proportion="0.62482566">
           <folding />
         </state>
       </provider>

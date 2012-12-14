@@ -42,7 +42,6 @@ window.onload = function() {
   colorNum = 50;
   intervalOfBitmap=(cH/colorNum) ;
   xsuu=Math.floor(cW/intervalOfBitmap);
-  // dboxの数が大きいほど、ビットマップの数が増える
   dBox=intervalOfBitmap*0.9;
   x0=(cW-(xsuu-1)*intervalOfBitmap-dBox);
   y0=(cH-(colorNum-1)*intervalOfBitmap-dBox);
@@ -74,7 +73,7 @@ function changeText(text){
 function currentDate(){
   var date = new Date();
   var res = date.getFullYear() + " / " +date.getMonth() + " / " + date.getDate() +" "+ date.getHours() + " : " + date.getMinutes() + "    ";
-  return res;
+  return "WordBench香川 ";
 
 }
 function setup() {
@@ -126,7 +125,9 @@ function render() {
   var i;
   var j;
   var iti2=-iti;
-  ctx.fillStyle = 'rgb(0,255,0)';
+  var green = Math.floor(Math.random()* 150) + 100;
+  ctx.fillStyle = 'rgb(0,' + green + ',0)';
+//  ctx.fillStyle = 'rgb(0,255,0)';
   for(i=0;i<xsuu;i++) {
     for(j=0;j<colorNum;j++) {
       if(iti2>=0) {
